@@ -1,0 +1,143 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Center container with styling */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Headings styling */
+h1, h2 {
+    color: #333;
+}
+
+/* Balance text styling */
+#balance {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+}
+
+/* Input, select, and button styling */
+input, select, button {
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button base styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+}
+
+/* Export button styling */
+#exportButton {
+    background-color: #008CBA;
+}
+
+#exportButton:hover {
+    background-color: #007B9A;
+}
+
+
+
+/* Responsive */
+@media (max-width: 480px) {
+    /* General adjustments for smaller screens */
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+        box-shadow: none; /* Remove shadow for simplicity on small screens */
+        border-radius: 0;
+    }
+    h1, h2 {
+        font-size: 18px; /* Smaller headings */
+        text-align: center; /* Center-align headings */
+    }
+    #balance {
+        font-size: 20px;
+        text-align: center; /* Center-align the balance display */
+    }
+    form {
+        display: flex;
+        flex-direction: column; /* Stack inputs vertically */
+        gap: 10px;
+    }
+    input, select, button {
+        width: 100%; /* Full-width inputs and buttons */
+        padding: 10px; /* Comfortable padding */
+        margin: 0; /* Remove margins */
+    }
+    button {
+        font-size: 16px; /* Increase font size for easier tap */
+    }
+    table {
+        font-size: 12px; /* Smaller font for table */
+    }
+    th, td {
+        padding: 5px; /* Reduce padding */
+    }
+    .delete-btn, #exportButton {
+        width: 100%; /* Full-width buttons */
+        margin-top: 5px;
+    }
+    .empty-message img {
+        width: 100%; /* Scale the image to fit screen */
+        height: auto;
+    }
+    .empty-message p {
+        font-size: 14px; /* Smaller text for the "No transactions" message */
+    }
+}
